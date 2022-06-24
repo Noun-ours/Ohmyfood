@@ -12,10 +12,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="loader">
+      <div class="cercle"></div>
+  </div>
+
     <header>
       <h1 class="titre">Ohmyfood</h1>
     </header>
-    <main>
+    
       <section class="localisation">
         <i class="fa-solid fa-location-dot"></i>
         <span>Paris, Belleville</span>
@@ -33,7 +37,7 @@
           <a href="#visite " class="btn-exploration">Explorez nos restaurants</a>
         </div>
       </section>
-    </main>
+    
     <section class="fonctionnement">
       <h2>Fonctionnement</h2>
       <article class="bulle-fonction">
@@ -59,26 +63,12 @@
     <main id="visite" class="tout-lesrestos">
       <h2>Restaurants</h2>
 
-      <!-- <article class="photo">
-        <div
-          class="teste"
-          style="
-            background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)">
-            <span class="testabsolu">Nouveau</span>
-      </div>
-          
-          <div class="nom-resto">
-            <h3>La palette du gout</h3>
-            <p>Menilmontant</p>
-            <i class="fa-regular fa-heart"></i>
-          </div>
-      </article> -->
 
 <!-- ****************************** -->
 <!-- :::::::::::::::::::::::::::::: -->
       <article class="resto-carte">
         <a href="la-palette.html">
-          <div class="carte-resto" style="background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;">
+          <div class="carte-resto " style="background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) ;" >
             <!-- <img
             src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt=""
@@ -90,9 +80,8 @@
               <p>Menilmontant</p>
             </div>
             <div class="coeur">
-              <i class="fa-regular fa-heart">
-                <i class="fa-solid fa-heart"></i>
-              </i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
         </a>
       </article>
@@ -109,11 +98,11 @@
           </div>
             <div class="nom-lieu">
               <h3>La note enchantee</h3>
-              <p>charonne</p>
+              <p>Charonne</p>
             </div>
             <div class="coeur">
-              <i class="fa-solid fa-heart"></i>
               <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
         </a>
       </article>
@@ -130,12 +119,12 @@
             </div>
             <div class="nom-lieu">
               <h3>A la francaise</h3>
-              <p>Cité rouge</p>
+              <p>Cité Rouge</p>
+            </div>
               <div class="coeur">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-solid fa-heart"></i>
               </div>
-            </div>
           </a>
           </article>
 
@@ -152,10 +141,12 @@
             <div class="nom-lieu">
               <h3>Le delice des sens</h3>
               <p>Folie-Méricourt</p>
+            </div>
               <div class="coeur">
                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+                
               </div>
-            </div>
           </a>
           </article>
     </main>

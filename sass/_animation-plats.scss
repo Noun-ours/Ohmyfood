@@ -1,0 +1,32 @@
+.le-menu {
+    .intitule{
+        opacity: 0;
+        animation: apparition 2s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    .apparition1{
+        animation-delay:0;
+    }
+    .apparition2{
+        animation-delay:0.5s;
+    }
+    .apparition3{
+        animation-delay:1s
+    }
+    .apparition4{
+        animation-delay: 1.5s;
+    }
+}
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(-27%);
+        transform: scale(0.6);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+    
+    }
+}

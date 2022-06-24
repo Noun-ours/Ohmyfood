@@ -1,0 +1,88 @@
+.la-carte h4{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+.la-carte {
+    // border: 1px solid rgb(36, 204, 134);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    
+}
+.prix{
+    padding-right: 20px;
+   height: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    // align-items: center;
+   
+
+}
+.la-carte .valider{
+    // border: 1px solid rgb(32, 199, 135);
+    display: grid;
+    place-content: center;
+    height: 150px;
+    // width: 30%;
+    background-color: #4edd95;
+    color: white;
+    overflow: hidden;
+}
+
+.la-carte {
+    padding-right: 0;
+
+}
+
+.la-carte .les-plats{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 95%;
+    transition: width 0.5s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.les-plats p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.la-carte .valider {
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.la-carte:hover .les-plats {
+    width: 100%;
+}
+
+.la-carte:hover .valider {
+    width: 80px;
+}
+.la-carte .valider i {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+.la-carte:hover .valider i {
+    transform: rotate(360deg);
+}
