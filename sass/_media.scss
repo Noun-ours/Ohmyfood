@@ -3,4 +3,15 @@
         display: grid;
         grid-template-columns: repeat(3, 30%);
     }
+    .resto-carte{
+        width: 45%;
+    
+    }
+    .restos-carte{
+        flex-direction: row;
+        // flex-wrap: wrap;
+    }
+
 }
+
+

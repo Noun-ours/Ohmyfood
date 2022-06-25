@@ -1,0 +1,14 @@
+.coeur-resto i{
+    position: absolute;
+}
+.coeur-resto .fa-solid{
+    color:transparent;
+}
+.coeur-resto .fa-solid:hover{
+    
+    color: #FF79DA;
+
+    // mix-blend-mode:difference;
+    // transform: scale(1.1);
+    transition-duration: 1.9s;
+}
