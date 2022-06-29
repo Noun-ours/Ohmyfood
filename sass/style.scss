@@ -446,13 +446,18 @@ gap: 15px;
         font-size: 20px;
         font-weight:100;
         font-family: shrikhand, sans-serif ;
-    color: white;
+        
+    color: $couleur-blanc;
     }
     .lien-foot{
         display: flex;
         align-items: center;
         gap: 10px;
-        color: white;
+        color: $couleur-blanc;
+    }
+    & a{
+        color:$couleur-blanc;
+        
     }
 }
 @import "./media";
