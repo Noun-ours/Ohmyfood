@@ -142,10 +142,6 @@ h1 {
   padding: 0;
 }
 
-.loader-body {
-  min-height: 100%;
-}
-
 .loader {
   min-height: 100%;
   position: absolute;
@@ -316,7 +312,7 @@ h1 {
   height: 50px;
   width: 250px;
   padding: 0px 5px;
-  margin: 20px 70px;
+  margin: 20px 60px;
   -webkit-box-shadow: 3px 3px 8px #d4d4d4;
           box-shadow: 3px 3px 8px #d4d4d4;
 }
@@ -481,7 +477,7 @@ li {
           box-shadow: 1px 1px 5px #d4d4d4;
   padding: 30px;
   height: 60px;
-  width: 95%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -492,7 +488,7 @@ li {
   gap: 15px;
   margin-inline: auto;
   max-width: 400px;
-  min-width: 375px;
+  min-width: 300px;
 }
 
 .bulle-fonction span {
@@ -568,9 +564,6 @@ ol {
 
 .resto-carte {
   position: relative;
-  /* border: 1px solid green; */
-  /* padding: 15px; */
-  /* background-color: #a4aef2; */
   border-radius: 15px;
   -webkit-box-shadow: 5px 3px 15px 3px rgba(0, 0, 0, 0.28);
           box-shadow: 5px 3px 15px 3px rgba(0, 0, 0, 0.28);
@@ -579,15 +572,12 @@ ol {
   height: 260px;
 }
 
-.carte-resto {
+.carte-resto img {
   border-radius: 15px 15px 0px 0px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  width: 100%;
-  min-width: 200px;
   height: 170px;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .coeur {
@@ -645,17 +635,6 @@ ol {
   gap: 10px;
 }
 
-.image-resto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  min-width: 200px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-}
-
 .menu-lienfoot {
   margin-top: 20px;
   display: -webkit-box;
@@ -675,16 +654,31 @@ ol {
 .flecheretour {
   display: inline-block;
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   left: 10%;
-  font-size: xx-large;
+  font-size: larger;
+}
+
+.grosse-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grosse-img img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 61%;
+     object-position: 50% 61%;
 }
 
 .menu {
   background-color: #f5f5f8;
   width: 100%;
   gap: 20px;
-  border-radius: 18px 18px 0px 0px;
+  border-radius: 28px 28px 0px 0px;
   margin-top: -25px;
 }
 
