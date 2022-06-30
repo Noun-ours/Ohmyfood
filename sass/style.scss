@@ -132,7 +132,7 @@ li{
     display: flex;
     gap: 15px;
     margin-inline: auto;
-    max-width: 400px;
+    max-width: 315px;
     min-width: 300px;
 
 }
@@ -301,7 +301,7 @@ ol{
    background-color: #f5f5f8;
    width: 100%;
    gap: 20px;
-   border-radius: 28px 28px 0px 0px;
+   border-radius: 18px 18px 0px 0px;
    margin-top: -25px;
 }
 .menu h2{
@@ -454,6 +454,9 @@ gap: 15px;
         align-items: center;
         gap: 10px;
         color: $couleur-blanc;
+    }
+    h4{
+        font-weight: 200;
     }
     & a{
         color:$couleur-blanc;

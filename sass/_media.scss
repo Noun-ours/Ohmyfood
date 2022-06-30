@@ -1,17 +1,26 @@
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+    .resto-carte{
+        width: 47.3%;
+        
+    }
+    .restos-carte{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    
+}
+
+@media (min-width:992px ){
+    
     .page-restos{
         display: grid;
         grid-template-columns: repeat(3, 30%);
     }
-    .resto-carte{
-        width: 45%;
-    
-    }
-    .restos-carte{
-        flex-direction: row;
-        // flex-wrap: wrap;
-    }
-
 }
 
-
+@media (min-width:1048px){
+    .restos-carte{
+        flex-wrap: nowrap
+    }
+}
