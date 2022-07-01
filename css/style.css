@@ -241,8 +241,8 @@ h1 {
 }
 
 .le-menu .apparition1 {
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .le-menu .apparition2 {
@@ -359,7 +359,6 @@ h1 {
   .page-restos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (30%)[3];
         grid-template-columns: repeat(3, 30%);
   }
 }
@@ -807,7 +806,6 @@ ol {
   .page-restos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (30%)[3];
         grid-template-columns: repeat(3, 30%);
   }
 }
