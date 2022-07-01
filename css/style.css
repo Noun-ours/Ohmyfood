@@ -232,7 +232,7 @@ h1 {
   }
 }
 
-.le-menu .intitule {
+.le-menu .les-plats {
   opacity: 0;
   -webkit-animation: apparition 2s ease-in-out;
           animation: apparition 2s ease-in-out;
@@ -310,25 +310,35 @@ h1 {
   border: 1px solid;
   border-radius: 100px;
   height: 50px;
-  width: 250px;
+  width: 230px;
   padding: 0px 5px;
   margin: 20px 60px;
   -webkit-box-shadow: 3px 3px 8px #d4d4d4;
           box-shadow: 3px 3px 8px #d4d4d4;
 }
 
-.coeur-resto i {
+.btn-exploration:hover {
+  -webkit-box-shadow: 3px 3px 8px #777676;
+          box-shadow: 3px 3px 8px #777676;
+  opacity: 0.8;
+}
+
+.coeur i, .coeur-resto i {
   position: absolute;
 }
 
-.coeur-resto .fa-solid {
+.coeur .fa-solid, .coeur-resto .fa-solid {
   color: transparent;
-}
-
-.coeur-resto .fa-solid:hover {
-  color: #FF79DA;
   -webkit-transition-duration: 1.9s;
           transition-duration: 1.9s;
+}
+
+.coeur .fa-solid:active, .coeur-resto .fa-solid:active {
+  color: #ff79da;
+}
+
+.coeur:hover .fa-solid, .coeur-resto:hover .fa-solid {
+  color: #FF79DA;
 }
 
 @media (min-width: 768px) {
@@ -358,6 +368,12 @@ h1 {
   .restos-carte {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .resto-carte .fa-solid:hover {
+    color: #FF79DA;
+    mix-blend-mode: lighten;
+    -webkit-transition-duration: 1.9s;
+            transition-duration: 1.9s;
   }
 }
 
@@ -430,14 +446,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: center; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* gap: 15px; */
   height: 100%;
-  /* width: 100%; */
 }
 
 .commande {
@@ -461,12 +474,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
-  /* justify-content: center; */
-  /* align-items:flex-start; */
-}
-
-.fonctionnement h2 {
-  /* padding-left: 35px; */
 }
 
 .bulle-fonction {
@@ -479,7 +486,6 @@ a {
           flex-direction: column;
   margin-top: 30px;
   padding: inherit;
-  /* justify-content: space-between; */
 }
 
 li {
@@ -510,7 +516,6 @@ li {
   display: flex;
   width: 25px;
   height: 25px;
-  /* border: 1px solid red; */
   border-radius: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -520,16 +525,13 @@ li {
           justify-content: center;
   color: white;
   place-items: center;
-  /* bottom: 10px; */
   right: 96.5%;
 }
 
 ol {
-  /* position: relative; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: center; */
   gap: 35px;
   list-style-type: none;
   -ms-flex-wrap: wrap;
@@ -608,20 +610,17 @@ ol {
   color: transparent;
 }
 
-.resto-carte .fa-solid:hover {
+.resto-carte .fa-solid:active {
   color: #FF79DA;
-  mix-blend-mode: difference;
-  -webkit-transition-duration: 1.9s;
-          transition-duration: 1.9s;
+  mix-blend-mode: lighten;
 }
 
-/* petite case avce le mot nouveau */
 .nouveaute {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  background-color: aquamarine;
+  background-color: #99E2D0;
   right: 5%;
   top: 5%;
   height: 30px;
@@ -632,6 +631,7 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #008766;
 }
 
 .nom-lieu {
@@ -717,6 +717,7 @@ ol {
   right: 15%;
   top: 15%;
   font-size: xx-large;
+  z-index: 10;
 }
 
 .carte-menu {
@@ -815,6 +816,12 @@ ol {
   .restos-carte {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .resto-carte .fa-solid:hover {
+    color: #FF79DA;
+    mix-blend-mode: lighten;
+    -webkit-transition-duration: 1.9s;
+            transition-duration: 1.9s;
   }
 }
 /*# sourceMappingURL=style.css.map */

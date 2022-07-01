@@ -23,4 +23,10 @@
     .restos-carte{
         flex-wrap: nowrap
     }
-}
+    .resto-carte .fa-solid:hover{
+    
+        color: #FF79DA;
+        mix-blend-mode: lighten;
+        transition-duration: 1.9s;
+ }
+ }

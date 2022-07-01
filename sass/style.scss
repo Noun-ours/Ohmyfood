@@ -69,28 +69,11 @@ img{
 }
 .explor{
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
-    /* gap: 15px; */
     height: 100%;
-    /* width: 100%; */
 
 }
-// .btn-exploration{
-    
-//     background-image: linear-gradient(#FF79DA ,#9356DC);
-//     color: white;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 1px solid ;
-//     border-radius: 100px;
-//     height: 50px;
-//     width: 250px;
-//     padding: 0px 5px;
-//     margin: 20px 70px;
-//     box-shadow: 3px 3px 8px rgb(212, 212, 212);
-// }
+
 .commande{
     
     margin-inline: auto;
@@ -105,20 +88,14 @@ img{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    /* justify-content: center; */
-    /* align-items:flex-start; */
 }
-.fonctionnement h2{
-    /* padding-left: 35px; */
 
-}
 .bulle-fonction{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     padding:inherit;
     
-    /* justify-content: space-between; */
 }
 li{
     position: relative;
@@ -144,22 +121,17 @@ span{
     display:flex; 
     width: 25px;
     height: 25px;
-    /* border: 1px solid red; */
     border-radius: 50px;
     align-items: center;
     justify-content: center;
     color: white;
     place-items: center;
-    /* bottom: 10px; */
     right:96.5%;
 }
 
 }
 ol{
-    /* position: relative; */
     display: flex;
-    /* align-items: center; */
-    // flex-direction: column;
     gap: 35px;
     list-style-type: none;
     flex-wrap: wrap;
@@ -223,31 +195,26 @@ ol{
 .resto-carte .fa-solid{
     color: transparent;
 }
-.resto-carte .fa-solid:hover{
+.resto-carte .fa-solid:active{
     
     color: #FF79DA;
 
-    mix-blend-mode:difference;
-    // transform: scale(1.1);
-    transition-duration: 1.9s;
+    mix-blend-mode:lighten;
+    
+    
 }
-/* petite case avce le mot nouveau */
-// .testabsolu{
-//     position: absolute;
-//     background-color: aquamarine;
-//     right: 5%;
-//     top: 5%;
-// }
+
 .nouveaute{
     display: flex;
     position: absolute;
-    background-color: aquamarine;
+    background-color:$couleur-tertiaire;
     right: 5%;
     top: 5%;
     height: 30px;
     width: 80px;
     align-items: center;
     justify-content: center;
+    color: rgb(0, 135, 102);
 }
 .nom-lieu{position: relative;
     display: flex;
@@ -275,13 +242,11 @@ ol{
 .flecheretour {
     display:inline-block;
     
-    // position: relative;
-    // i{
         position: absolute;
         bottom: 25%;
         left: 10%;
         font-size:larger;
-    // }
+    //}
 }
 .grosse-img{
     width: 100%;
@@ -296,8 +261,6 @@ ol{
 }
 
 .menu{
-    // position: relative;
-//    border: 1px solid black;
    background-color: #f5f5f8;
    width: 100%;
    gap: 20px;
@@ -306,7 +269,6 @@ ol{
 }
 .menu h2{
     font-family: shrikhand;
-    // padding: 0px 15px;
     font-size: x-large;
     font-weight: 400;
     padding-left: 15px;
@@ -326,11 +288,9 @@ ol{
     right: 15%;
     top: 15%;
     font-size: xx-large;
+    z-index: 10;
 }
-.menu i{
-    // position: absolute;
-    
-}
+
 .carte-menu{
     display: flex;
 flex-direction: column;
@@ -368,24 +328,6 @@ gap: 15px;
 
 
 
-// .lesentrees{
-    
-//     border: 1px solid rgb(36, 204, 134);
-//     background-color: rgb(133, 119, 119);
-//     border-radius: 5px;
-//     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-//     padding: 20px;
-//     margin: 0 auto;
-//     width: 100%;
-//     height: 100px;
-//     display: flex;
-//     align-items: center;
-//     position: relative;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     margin-bottom: 20px;
-// }
-
 
 // .intitule{
 //     position: relative;
@@ -403,36 +345,6 @@ gap: 15px;
 //     // padding-right: 0;
 
 
-//     transition : width 0.5s ease-in-out;
-
-// }
-// .prixspan{
-//     position: absolute;
-//     right: 5%;
-//     bottom: 15%;
-//     display: flex;
-
-// }
-// .validation{
-//     position: absolute;
-//     display: flex;
-//     // justify-content: flex-end;
-//     left: 95%;
-//     background-color: aqua;
-//     // width: 30px;
-//     // height: 40px;
-
-//     height: 150px;
-//     // width: -150px;
-//     // width: 0;
-//     transition:width 0.5s ease-in-out
-// }
-// .intitule:hover{
-//     width: 100%;
-// }
-// .intitule:hover .validation{
-//     width: 450px;
-// }
 
 
 .footnav{
@@ -442,7 +354,6 @@ gap: 15px;
         padding: 20px;
     }
     .logo{
-        // text-align: center;
         font-size: 20px;
         font-weight:100;
         font-family: shrikhand, sans-serif ;

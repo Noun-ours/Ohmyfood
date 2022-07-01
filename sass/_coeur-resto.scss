@@ -1,14 +1,15 @@
-.coeur-resto i{
+.coeur , .coeur-resto{
+  i {
     position: absolute;
-}
-.coeur-resto .fa-solid{
-    color:transparent;
-}
-.coeur-resto .fa-solid:hover{
-    
-    color: #FF79DA;
-
-    // mix-blend-mode:difference;
-    // transform: scale(1.1);
+  }
+  .fa-solid {
+    color: transparent;
     transition-duration: 1.9s;
+    &:active {
+      color: #ff79da;
+    }
+  }
+  &:hover .fa-solid {
+    color: $couleur-secondaire;
+  } 
 }
