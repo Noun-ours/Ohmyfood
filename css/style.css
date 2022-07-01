@@ -337,10 +337,6 @@ h1 {
   color: #ff79da;
 }
 
-.coeur:hover .fa-solid, .coeur-resto:hover .fa-solid {
-  color: #FF79DA;
-}
-
 @media (min-width: 768px) {
   .resto-carte {
     width: 47.3%;
@@ -353,26 +349,27 @@ h1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .resto-carte .fa-solid:hover {
+    color: #FF79DA;
+    mix-blend-mode: lighten;
+    -webkit-transition-duration: 1.9s;
+            transition-duration: 1.9s;
+  }
 }
 
 @media (min-width: 992px) {
   .page-restos {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (30%)[3];
         grid-template-columns: repeat(3, 30%);
   }
 }
 
-@media (min-width: 1048px) {
+@media (min-width: 992px) and (min-width: 1048px) {
   .restos-carte {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  .resto-carte .fa-solid:hover {
-    color: #FF79DA;
-    mix-blend-mode: lighten;
-    -webkit-transition-duration: 1.9s;
-            transition-duration: 1.9s;
   }
 }
 
@@ -800,26 +797,27 @@ ol {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .resto-carte .fa-solid:hover {
+    color: #FF79DA;
+    mix-blend-mode: lighten;
+    -webkit-transition-duration: 1.9s;
+            transition-duration: 1.9s;
+  }
 }
 
 @media (min-width: 992px) {
   .page-restos {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (30%)[3];
         grid-template-columns: repeat(3, 30%);
   }
 }
 
-@media (min-width: 1048px) {
+@media (min-width: 992px) and (min-width: 1048px) {
   .restos-carte {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  .resto-carte .fa-solid:hover {
-    color: #FF79DA;
-    mix-blend-mode: lighten;
-    -webkit-transition-duration: 1.9s;
-            transition-duration: 1.9s;
   }
 }
 /*# sourceMappingURL=style.css.map */

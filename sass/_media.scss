@@ -8,8 +8,15 @@
         flex-wrap: wrap;
         
     }
+    .resto-carte .fa-solid:hover{
     
-}
+        color: #FF79DA;
+        mix-blend-mode: lighten;
+        transition-duration: 1.9s;
+    }
+    }
+    
+
 
 @media (min-width:992px ){
     
@@ -17,16 +24,10 @@
         display: grid;
         grid-template-columns: repeat(3, 30%);
     }
-}
 
 @media (min-width:1048px){
     .restos-carte{
         flex-wrap: nowrap
     }
-    .resto-carte .fa-solid:hover{
-    
-        color: #FF79DA;
-        mix-blend-mode: lighten;
-        transition-duration: 1.9s;
  }
- }
+  }
