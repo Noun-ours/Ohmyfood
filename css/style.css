@@ -337,6 +337,10 @@ h1 {
   color: #ff79da;
 }
 
+.coeur:hover .fa-solid, .coeur-resto:hover .fa-solid {
+  color: #FF79DA;
+}
+
 @media (min-width: 768px) {
   .resto-carte {
     width: 47.3%;
@@ -361,7 +365,6 @@ h1 {
   .page-restos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (30%)[3];
         grid-template-columns: repeat(3, 30%);
   }
 }
@@ -606,7 +609,7 @@ ol {
   color: transparent;
 }
 
-.resto-carte .fa-solid:active {
+.resto-carte .fa-solid:hover {
   color: #FF79DA;
   mix-blend-mode: lighten;
 }
@@ -809,7 +812,6 @@ ol {
   .page-restos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (30%)[3];
         grid-template-columns: repeat(3, 30%);
   }
 }
